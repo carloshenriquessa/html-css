@@ -1,0 +1,17 @@
+@charset "UTF-08";
+
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #B1F4B3;
+}
+
+header{
+    background-image: linear-gradient(to bottom, #76A077, #1E4B20);
+    text-align: center;
+    
+}
+
+.box{
+    color:white
+}
+
