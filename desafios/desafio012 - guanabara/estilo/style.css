@@ -1,5 +1,20 @@
 @charset "UTF-8";
 
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Passion+One:wght@400;700;900&display=swap');
+
+@import url('https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;0,700;1,400;1,600;1,700&family=Passion+One:wght@400;700;900&display=swap');
+
+:root{
+    --fonte01: Verdana, Geneva, Tahoma, sans-serif;
+    --fonte02: "Passion One", sans-serif;
+    --fonte03: "Crimson Text", serif;
+
+    --cor01: #F8AFB6;
+    --cor02: #A7404B;
+    --cor03: #FC0D25;
+    --cor04: #7D454A;
+    --cor05: #523B3D;
+}
 *{
     margin: 0px;
     padding: 0px;
@@ -8,10 +23,11 @@
 html, body{
     min-height: 100vh;
     background-color: darkgray;
+    font-family: var(--fonte01);
 }
 
 header{
-    background-color: #523B3D;
+    background-color: var(--cor05);
     color: white;
     text-align: center;
 }
@@ -19,6 +35,8 @@ header{
 header>h1{
     padding-top: 50px ;
     font-variant: small-caps;
+    font-family: var(--fonte02);
+    font-size: 10vw;
 }
 
 header>p{
@@ -40,6 +58,8 @@ section{
     padding-bottom: 10vh;
     line-height: 2em;
     padding-left: 35px;
+    font-family: var(--fonte03);
+    font-size: 4vw;
 }
 
 section.normal{
@@ -53,12 +73,13 @@ section.imagem{
 }
 
 section.imagem>p{
-    width: 350px;
+    display: inline-block;
     background-color: rgba(0, 0, 0, 0.232);
+    padding: 5px;
 }
 
 footer{
-    background-color: #523B3D;
+    background-color: var(--cor05);
     color: white;
     text-align: center;
     padding: 10px;
