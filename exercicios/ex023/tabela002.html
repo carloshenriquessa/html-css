@@ -12,6 +12,7 @@
         table{
             width: 500px;
             border-collapse: collapse;
+            position: relative;
         }
 
         td, th{
@@ -32,6 +33,11 @@
             color: white;
         }
 
+        thead>tr>th{
+            position: sticky;
+            top: 0;
+        }
+
         tbody>tr:nth-child(2n){
             background-color: rgba(0, 255, 255, 0.145);
 
@@ -43,7 +49,7 @@
     </style>
 </head>
 <body>
-    <h1>Uso de tabelas grandes</h1>
+    <h1>Uso de tabelas</h1>
     <h2>Estados do sudeste</h2>
     <!--
         anatomia para tabelas grandes
