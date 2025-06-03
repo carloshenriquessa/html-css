@@ -1,0 +1,25 @@
+@charset "UTF-08";
+
+/*Estilo de impressora*/
+
+*{
+    padding: 10px;
+    margin: 10px;
+}
+
+html{
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 1.5em;
+}
+
+menu{
+    display: none;
+}
+
+article{
+    width: 100%;
+}
+
+article::after{
+    content: 'Esse artigo foi empresso através do site www.cursoemvideo.com';
+}
