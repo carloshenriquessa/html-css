@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: rgb(0, 42, 0);
+        }
+        div.container{
+            background-color: greenyellow; 
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            color: darkgreen;
+            border: 1px solid darkgreen;
+            text-align: center;
+            flex-basis: 250px;
+            flex-shrink: 1;
+            flex-grow: 1;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptate molestiae, quibusdam ipsa autem asperiores optio, molestias animi libero rerum porro cupiditate aliquam voluptatem! Sed, quia totam blanditiis veniam nemo perspiciatis!</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam, porro tenetur eligendi labore autem fugit deserunt ea non praesentium ex, placeat adipisci officiis tempore animi molestias explicabo, sed illo quibusdam? Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sit nam voluptatibus excepturi labore? Vero ab explicabo voluptas consectetur dolorum, vel natus laudantium aspernatur eveniet quod impedit. Quo perferendis pariatur iste?</div>
+        <div class="item">Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi dolore earum aspernatur impedit iure quisquam beatae excepturi doloremque maiores qui quae debitis recusandae ratione distinctio doloribus consequatur, vero asperiores deserunt? Lorem ipsum dolor sit, amet consectetur adipisicing elit. Modi veniam soluta, at recusandae rem officia accusamus. Explicabo quae totam optio eligendi, dolorem expedita eaque ipsum quaerat, placeat iste, odio alias? Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi laboriosam tenetur rem maiores rerum harum consequatur et consequuntur doloremque, officia quidem, ea ut dolores fugiat voluptatem. Praesentium incidunt neque eaque?</div>
+    </div>
+</body>
+</html>
