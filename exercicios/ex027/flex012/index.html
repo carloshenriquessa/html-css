@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flexible Box</title>
+    <style>
+        body{
+            background-color: rgb(0, 42, 0);
+        }
+        div.container{
+            background-color: greenyellow; 
+            display: flex;
+            flex-flow: row nowrap;
+        }
+
+        div.item{
+            background-color: lightgreen;
+            color: darkgreen;
+            border: 1px solid darkgreen;
+            text-align: center;
+        }
+
+        div#i1{
+            /*flex-shrink: 4;
+            flex-grow: 1;
+            flex-basis: 200px;*/
+
+            flex: 1 4 200px;
+        }
+
+        div#i2{
+            /*flex-shrink: 1;
+            flex-grow: 4;
+            flex-basis: 200px;*/
+
+            flex: 4 1 200px;
+        }
+
+        div#i3{
+            /*flex-shrink: 2;
+            flex-grow: 0;
+            flex-basis: 200px;*/
+
+            flex: 0 1 200px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="item" id="i1">Menu</div>
+        <div class="item" id="i2">Lorem ipsum dolor sit amet consectetur adipisicing elit. Accusantium non beatae possimus neque ipsam explicabo! Minus ex recusandae ullam, quisquam sit, voluptatibus accusamus nobis doloribus tenetur dolorem maxime dolore eaque. Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam quas velit sunt beatae asperiores sit illum aliquam distinctio sint fugit, nulla, et soluta deleniti nobis non blanditiis? Impedit, praesentium illum.</div>
+        <div class="item" id="i3">Ad</div>
+    </div>
+</body>
+</html>
